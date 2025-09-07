@@ -29,7 +29,7 @@ export class Login {
       6. Show the message/error.
     */
     this.http.post(
-      "https://projectapi.gerasim.in/api/EmployeeManagement/login",
+      "http://127.0.0.1:8000/api/login/",
       this.loginObj
     ).subscribe((res: any) => {
       if (res.result) {
