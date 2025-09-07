@@ -4,3 +4,9 @@
 ```
 ## Navigate to url: `https://projectapi.gerasim.in/index.html` for endpoints
 ```
+
+```
+    Role: Employee | SuperAdmin
+    SuperAdmin: hradmin@gmail.com
+    Password: 112233
+```

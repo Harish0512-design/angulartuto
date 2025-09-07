@@ -10,8 +10,8 @@
                         <span class="padding-bottom--15">Sign in to your account</span>
                         <form id="stripe-login">
                             <div class="field padding-bottom--24">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" />
+                                <label for="username">Username</label>
+                                <input type="text" [(ngModel)]="loginObj.username" name="username" />
                             </div>
                             <div class="field padding-bottom--24">
                                 <div class="grid--50-50">
@@ -20,7 +20,7 @@
                                         <a href="#">Forgot your password?</a>
                                     </div>
                                 </div>
-                                <input type="password" name="password" />
+                                <input type="password" [(ngModel)]="loginObj.password" name="password" />
                             </div>
                             <div class="field field-checkbox padding-bottom--24 flex-flex align-center">
                                 <label for="checkbox">
@@ -29,7 +29,7 @@
                                 </label>
                             </div>
                             <div class="field padding-bottom--24">
-                                <input type="submit" name="submit" value="Continue" />
+                                <input type="submit" name="login" value="Login" (click)="onLogin()" />
                             </div>
                             <div class="field">
                                 <a class="ssolink" href="#">Use single sign-on (Google) instead</a>
